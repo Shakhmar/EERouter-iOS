@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A32E82B7205633300017BD5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32E82B6205633300017BD5F /* AppDelegate.swift */; };
+		A32E82B9205633300017BD5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32E82B8205633300017BD5F /* ViewController.swift */; };
+		A32E82BC205633300017BD5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A32E82BA205633300017BD5F /* Main.storyboard */; };
+		A32E82BE205633300017BD5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A32E82BD205633300017BD5F /* Assets.xcassets */; };
+		A32E82C1205633300017BD5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A32E82BF205633300017BD5F /* LaunchScreen.storyboard */; };
+		A32E82CC205633300017BD5F /* EERouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32E82CB205633300017BD5F /* EERouterTests.swift */; };
+		A32E82D7205633300017BD5F /* EERouterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32E82D6205633300017BD5F /* EERouterUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A32E82C8205633300017BD5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A32E82AB205633300017BD5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A32E82B2205633300017BD5F;
+			remoteInfo = EERouter;
+		};
+		A32E82D3205633300017BD5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A32E82AB205633300017BD5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A32E82B2205633300017BD5F;
+			remoteInfo = EERouter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A32E82B3205633300017BD5F /* EERouter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EERouter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A32E82B6205633300017BD5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A32E82B8205633300017BD5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A32E82BB205633300017BD5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A32E82BD205633300017BD5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A32E82C0205633300017BD5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A32E82C2205633300017BD5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A32E82C7205633300017BD5F /* EERouterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EERouterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A32E82CB205633300017BD5F /* EERouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EERouterTests.swift; sourceTree = "<group>"; };
+		A32E82CD205633300017BD5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A32E82D2205633300017BD5F /* EERouterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EERouterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A32E82D6205633300017BD5F /* EERouterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EERouterUITests.swift; sourceTree = "<group>"; };
+		A32E82D8205633300017BD5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A32E82B0205633300017BD5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A32E82C4205633300017BD5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A32E82CF205633300017BD5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A32E82AA205633300017BD5F = {
+			isa = PBXGroup;
+			children = (
+				A32E82B5205633300017BD5F /* EERouter */,
+				A32E82CA205633300017BD5F /* EERouterTests */,
+				A32E82D5205633300017BD5F /* EERouterUITests */,
+				A32E82B4205633300017BD5F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A32E82B4205633300017BD5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A32E82B3205633300017BD5F /* EERouter.app */,
+				A32E82C7205633300017BD5F /* EERouterTests.xctest */,
+				A32E82D2205633300017BD5F /* EERouterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A32E82B5205633300017BD5F /* EERouter */ = {
+			isa = PBXGroup;
+			children = (
+				A32E82B6205633300017BD5F /* AppDelegate.swift */,
+				A32E82B8205633300017BD5F /* ViewController.swift */,
+				A32E82BA205633300017BD5F /* Main.storyboard */,
+				A32E82BD205633300017BD5F /* Assets.xcassets */,
+				A32E82BF205633300017BD5F /* LaunchScreen.storyboard */,
+				A32E82C2205633300017BD5F /* Info.plist */,
+			);
+			path = EERouter;
+			sourceTree = "<group>";
+		};
+		A32E82CA205633300017BD5F /* EERouterTests */ = {
+			isa = PBXGroup;
+			children = (
+				A32E82CB205633300017BD5F /* EERouterTests.swift */,
+				A32E82CD205633300017BD5F /* Info.plist */,
+			);
+			path = EERouterTests;
+			sourceTree = "<group>";
+		};
+		A32E82D5205633300017BD5F /* EERouterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A32E82D6205633300017BD5F /* EERouterUITests.swift */,
+				A32E82D8205633300017BD5F /* Info.plist */,
+			);
+			path = EERouterUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A32E82B2205633300017BD5F /* EERouter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A32E82DB205633300017BD5F /* Build configuration list for PBXNativeTarget "EERouter" */;
+			buildPhases = (
+				A32E82AF205633300017BD5F /* Sources */,
+				A32E82B0205633300017BD5F /* Frameworks */,
+				A32E82B1205633300017BD5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EERouter;
+			productName = EERouter;
+			productReference = A32E82B3205633300017BD5F /* EERouter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A32E82C6205633300017BD5F /* EERouterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A32E82DE205633300017BD5F /* Build configuration list for PBXNativeTarget "EERouterTests" */;
+			buildPhases = (
+				A32E82C3205633300017BD5F /* Sources */,
+				A32E82C4205633300017BD5F /* Frameworks */,
+				A32E82C5205633300017BD5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A32E82C9205633300017BD5F /* PBXTargetDependency */,
+			);
+			name = EERouterTests;
+			productName = EERouterTests;
+			productReference = A32E82C7205633300017BD5F /* EERouterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A32E82D1205633300017BD5F /* EERouterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A32E82E1205633300017BD5F /* Build configuration list for PBXNativeTarget "EERouterUITests" */;
+			buildPhases = (
+				A32E82CE205633300017BD5F /* Sources */,
+				A32E82CF205633300017BD5F /* Frameworks */,
+				A32E82D0205633300017BD5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A32E82D4205633300017BD5F /* PBXTargetDependency */,
+			);
+			name = EERouterUITests;
+			productName = EERouterUITests;
+			productReference = A32E82D2205633300017BD5F /* EERouterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A32E82AB205633300017BD5F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Shakhmar Sarsenbay";
+				TargetAttributes = {
+					A32E82B2205633300017BD5F = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					A32E82C6205633300017BD5F = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A32E82B2205633300017BD5F;
+					};
+					A32E82D1205633300017BD5F = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A32E82B2205633300017BD5F;
+					};
+				};
+			};
+			buildConfigurationList = A32E82AE205633300017BD5F /* Build configuration list for PBXProject "EERouter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A32E82AA205633300017BD5F;
+			productRefGroup = A32E82B4205633300017BD5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A32E82B2205633300017BD5F /* EERouter */,
+				A32E82C6205633300017BD5F /* EERouterTests */,
+				A32E82D1205633300017BD5F /* EERouterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A32E82B1205633300017BD5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A32E82C1205633300017BD5F /* LaunchScreen.storyboard in Resources */,
+				A32E82BE205633300017BD5F /* Assets.xcassets in Resources */,
+				A32E82BC205633300017BD5F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A32E82C5205633300017BD5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A32E82D0205633300017BD5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A32E82AF205633300017BD5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A32E82B9205633300017BD5F /* ViewController.swift in Sources */,
+				A32E82B7205633300017BD5F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A32E82C3205633300017BD5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A32E82CC205633300017BD5F /* EERouterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A32E82CE205633300017BD5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A32E82D7205633300017BD5F /* EERouterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A32E82C9205633300017BD5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A32E82B2205633300017BD5F /* EERouter */;
+			targetProxy = A32E82C8205633300017BD5F /* PBXContainerItemProxy */;
+		};
+		A32E82D4205633300017BD5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A32E82B2205633300017BD5F /* EERouter */;
+			targetProxy = A32E82D3205633300017BD5F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A32E82BA205633300017BD5F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A32E82BB205633300017BD5F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A32E82BF205633300017BD5F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A32E82C0205633300017BD5F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A32E82D9205633300017BD5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A32E82DA205633300017BD5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A32E82DC205633300017BD5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EERouter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "shakhmar.sarsenbai-is.sdu.edu.kz.EERouter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A32E82DD205633300017BD5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EERouter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "shakhmar.sarsenbai-is.sdu.edu.kz.EERouter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		A32E82DF205633300017BD5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EERouterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "shakhmar.sarsenbai-is.sdu.edu.kz.EERouterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EERouter.app/EERouter";
+			};
+			name = Debug;
+		};
+		A32E82E0205633300017BD5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EERouterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "shakhmar.sarsenbai-is.sdu.edu.kz.EERouterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EERouter.app/EERouter";
+			};
+			name = Release;
+		};
+		A32E82E2205633300017BD5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = EERouterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "shakhmar.sarsenbai-is.sdu.edu.kz.EERouterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = EERouter;
+			};
+			name = Debug;
+		};
+		A32E82E3205633300017BD5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = EERouterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "shakhmar.sarsenbai-is.sdu.edu.kz.EERouterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = EERouter;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A32E82AE205633300017BD5F /* Build configuration list for PBXProject "EERouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A32E82D9205633300017BD5F /* Debug */,
+				A32E82DA205633300017BD5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A32E82DB205633300017BD5F /* Build configuration list for PBXNativeTarget "EERouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A32E82DC205633300017BD5F /* Debug */,
+				A32E82DD205633300017BD5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A32E82DE205633300017BD5F /* Build configuration list for PBXNativeTarget "EERouterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A32E82DF205633300017BD5F /* Debug */,
+				A32E82E0205633300017BD5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A32E82E1205633300017BD5F /* Build configuration list for PBXNativeTarget "EERouterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A32E82E2205633300017BD5F /* Debug */,
+				A32E82E3205633300017BD5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A32E82AB205633300017BD5F /* Project object */;
+}
