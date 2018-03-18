@@ -3,20 +3,24 @@ import CoreMotion
 
 class ViewController: UIViewController {
     
+    var currentMaxAccX:Double = 0.0
+    var currentMaxAccY:Double = 0.0
+    var currentMaxAccZ:Double = 0.0
+    var manager = CMMotionManager()
     //MARK: - Properties and Constants
     let stopColor = UIColor(red: 1.0, green: 0.0, blue: 0.0, alpha: 1.0)
     let startColor = UIColor(red: 0.0, green: 0.75, blue: 0.0, alpha: 1.0)
     // values for the pedometer data
     var numberOfSteps:Int! = nil
-    /*{ //this does not work. for demo purposes only.
-     didSet{
-     stepsLabel.text = "Steps:\(numberOfSteps)"
-     }
-     }*/
-    var distance:Double! = nil
-    var averagePace:Double! = nil
-    var pace:Double! = nil
-    
+    var Steps = [Int]()
+    var Direc = [Int]()
+ 
+    @IBOutlet weak var accX: UILabel!
+    @IBOutlet weak var accY: UILabel!
+    @IBOutlet weak var accZ: UILabel!
+    var currentStep = 0
+    var curr = 0
+    var jay = 0
     //the pedometer
     var pedometer = CMPedometer()
     
@@ -28,9 +32,6 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var statusTitle: UILabel!
     @IBOutlet weak var stepsLabel: UILabel!
-    @IBOutlet weak var avgPaceLabel: UILabel!
-    @IBOutlet weak var paceLabel: UILabel!
-    @IBOutlet weak var distanceLabel: UILabel!
     
     //MARK: - Outlets
     
@@ -44,20 +45,22 @@ class ViewController: UIViewController {
             startTimer()
             pedometer.startUpdates(from: Date(), withHandler: { (pedometerData, error) in
                 if let pedData = pedometerData{
-                    self.numberOfSteps = Int(pedData.numberOfSteps)
-                    //self.stepsLabel.text = "Steps:\(pedData.numberOfSteps)"
-                    if let distance = pedData.distance{
-                        self.distance = Double(distance)
+                    if (self.jay == 0){
+                        self.numberOfSteps = Int(pedData.numberOfSteps)
+                        self.currentStep=self.numberOfSteps
+                        self.curr = self.currentStep
+                        self.stepsLabel.text = "Steps:\(pedData.numberOfSteps)"
+                        self.jay=1
                     }
-                    if let averageActivePace = pedData.averageActivePace {
-                        self.averagePace = Double(averageActivePace)
+                    else{
+                        self.numberOfSteps = Int(pedData.numberOfSteps)
+                        self.curr=self.numberOfSteps-self.currentStep
+                        self.currentStep = self.currentStep+self.curr
+                        self.stepsLabel.text = "Steps:\(pedData.numberOfSteps)"
                     }
-                    if let currentPace = pedData.currentPace {
-                        self.pace = Double(currentPace)
-                    }
-                } else {
+                    } else {
                     self.numberOfSteps = nil
-                }
+                    }
             })
             //Toggle the UI to on state
             statusTitle.text = "Pedometer On"
@@ -97,27 +100,8 @@ class ViewController: UIViewController {
         }
         
         //distance
-        if let distance = self.distance{
-            distanceLabel.text = String(format:"Distance: %02.02f meters,\n %02.02f mi",distance,miles(meters: distance))
-        } else {
-            distanceLabel.text = "Distance: N/A"
-        }
         
-        //average pace
-        if let averagePace = self.averagePace{
-            avgPaceLabel.text = paceString(title: "Avg Pace", pace: averagePace)
-        } else {
-            avgPaceLabel.text =  paceString(title: "Avg Comp Pace", pace: computedAvgPace())
-        }
-        
-        //pace
-        if let pace = self.pace {
-            print(pace)
-            paceLabel.text = paceString(title: "Pace:", pace: pace)
-        } else {
-            paceLabel.text = "Pace: N/A "
-            paceLabel.text =  paceString(title: "Avg Comp Pace", pace: computedAvgPace())
-        }
+                //pace
     }
     
     //MARK: - Display and time format functions
@@ -132,36 +116,29 @@ class ViewController: UIViewController {
     }
     // convert a pace in meters per second to a string with
     // the metric m/s and the Imperial minutes per mile
-    func paceString(title:String,pace:Double) -> String{
-        var minPerMile = 0.0
-        let factor = 26.8224 //conversion factor
-        if pace != 0 {
-            minPerMile = factor / pace
-        }
-        let minutes = Int(minPerMile)
-        let seconds = Int(minPerMile * 60) % 60
-        return String(format: "%@: %02.2f m/s \n\t\t %02i:%02i min/mi",title,pace,minutes,seconds)
-    }
     
-    func computedAvgPace()-> Double {
-        if let distance = self.distance{
-            pace = distance / timeElapsed
-            return pace
-        } else {
-            return 0.0
-        }
-    }
-    
-    func miles(meters:Double)-> Double{
-        let mile = 0.000621371192
-        return meters * mile
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    }
+        if manager.isDeviceMotionAvailable{
+            
+            manager.deviceMotionUpdateInterval = 1.0
+            manager.startDeviceMotionUpdates(to: OperationQueue.current!, withHandler: { (data:CMDeviceMotion?, error:Error?) in
+                self.accX?.text = "Acceleration x \(data!.userAcceleration.x)"
+                self.accY?.text = "Acceleration y \(data!.userAcceleration.y)"
+                self.accZ?.text = "Acceleration z \(data!.userAcceleration.z)"
+                self.Direc.append(Int(data!.userAcceleration.y))
+                self.Steps.append(self.curr)
+                
+            })
+            
+        }
     
+    }
+
+
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A302C5B5205E25A5005FEEE3 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A302C5B4205E25A5005FEEE3 /* CoreMotion.framework */; };
 		A32E82B7205633300017BD5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32E82B6205633300017BD5F /* AppDelegate.swift */; };
 		A32E82B9205633300017BD5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32E82B8205633300017BD5F /* ViewController.swift */; };
 		A32E82BC205633300017BD5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A32E82BA205633300017BD5F /* Main.storyboard */; };
@@ -14,7 +15,6 @@
 		A32E82C1205633300017BD5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A32E82BF205633300017BD5F /* LaunchScreen.storyboard */; };
 		A32E82CC205633300017BD5F /* EERouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32E82CB205633300017BD5F /* EERouterTests.swift */; };
 		A32E82D7205633300017BD5F /* EERouterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32E82D6205633300017BD5F /* EERouterUITests.swift */; };
-		A32E82E520563D040017BD5F /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32E82E420563D040017BD5F /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A302C5B4205E25A5005FEEE3 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		A32E82B3205633300017BD5F /* EERouter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EERouter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A32E82B6205633300017BD5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A32E82B8205633300017BD5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +49,6 @@
 		A32E82D2205633300017BD5F /* EERouterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EERouterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A32E82D6205633300017BD5F /* EERouterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EERouterUITests.swift; sourceTree = "<group>"; };
 		A32E82D8205633300017BD5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A32E82E420563D040017BD5F /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A302C5B5205E25A5005FEEE3 /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +77,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A302C5B3205E25A4005FEEE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A302C5B4205E25A5005FEEE3 /* CoreMotion.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A32E82AA205633300017BD5F = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +92,7 @@
 				A32E82CA205633300017BD5F /* EERouterTests */,
 				A32E82D5205633300017BD5F /* EERouterUITests */,
 				A32E82B4205633300017BD5F /* Products */,
+				A302C5B3205E25A4005FEEE3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,7 +115,6 @@
 				A32E82BD205633300017BD5F /* Assets.xcassets */,
 				A32E82BF205633300017BD5F /* LaunchScreen.storyboard */,
 				A32E82C2205633300017BD5F /* Info.plist */,
-				A32E82E420563D040017BD5F /* File.swift */,
 			);
 			path = EERouter;
 			sourceTree = "<group>";
@@ -263,7 +272,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A32E82B9205633300017BD5F /* ViewController.swift in Sources */,
-				A32E82E520563D040017BD5F /* File.swift in Sources */,
 				A32E82B7205633300017BD5F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,6 +517,7 @@
 				A32E82DD205633300017BD5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A32E82DE205633300017BD5F /* Build configuration list for PBXNativeTarget "EERouterTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +526,7 @@
 				A32E82E0205633300017BD5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A32E82E1205633300017BD5F /* Build configuration list for PBXNativeTarget "EERouterUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +535,7 @@
 				A32E82E3205633300017BD5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
